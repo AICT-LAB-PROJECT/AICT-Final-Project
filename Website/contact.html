@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | EliteHomes International</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style-contact.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ELITEHOMES</a>
+
+        <!-- hidden checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- hamburger icon -->
+        <label for="menu-toggle" class="three-line">
+            <img src="assets/three-lines-menu-svgrepo-com.svg" alt="menu">
+        </label>
+
+        <!-- nav links -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="properties.html">Properties</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Contact</h1>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar-info">
+            <h2>Private Advisory</h2>
+            <p>Our advisors provide bespoke strategies for the acquisition and management of trophy assets globally. We
+                invite you to initiate a confidential dialogue.</p>
+
+            <div class="office-list">
+                <div class="office-item">
+                    <h4>Islamabad</h4>
+                    <p>National Headquarters • +92 300 4822913</p>
+                </div>
+                <div class="office-item">
+                    <h4>Lahore</h4>
+                    <p>Main Division • +92 315 7648683</p>
+                </div>
+                <div class="office-item">
+                    <h4>Faisalabad</h4>
+                    <p>Regional Hub • +92 341 4532453</p>
+                </div>
+                <div class="office-item">
+                    <h4>Karachi</h4>
+                    <p>Regional Hub • +92 306 2809007</p>
+                </div>
+            </div>
+        </aside>
+
+        <form class="contact-card" action="mailto:elitehomes@gmail.com" method="post" enctype="text/plain">
+            <div class="form-grid">
+                <div class="input-group">
+                    <label>Client Name</label>
+                    <input type="text" name="Client" placeholder="Enter Full Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone No.</label>
+                    <input type="text" name="Phone No." placeholder="Enter Contact No." required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" name="Subject" placeholder="Investment Inquiry" required>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Message</label>
+                    <textarea name="Body" rows="5" placeholder="How may we assist you?" required></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <span class="footer-logo">ELITE<span>HOMES</span></span>
+                <p>Built on trust and experience, we deliver exceptional luxury real estate services across the nation
+                    with discretion and precision.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Newsletter</h4>
+                <p>Receive exclusive off-market listings.</p>
+                <input type="email" placeholder="Your Email">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 ELITEHOMES INTERNATIONAL. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+</body>
+
+</html>
