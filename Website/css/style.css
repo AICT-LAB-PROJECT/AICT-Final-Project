@@ -22,7 +22,7 @@ body {
     overflow-x: hidden;
 }
 
-/* NAVIGATION */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ nav {
     color: var(--accent);
 }
 
-/* HERO */
+
 .hero {
     position: relative;
     height: 90vh;
@@ -76,10 +76,10 @@ nav {
     color: #fff;
     overflow: hidden;
     background: none;
-    /* IMPORTANT */
+
 }
 
-/* HERO VIDEO BACKGROUND */
+
 .hero-bg {
     position: absolute;
     top: 0;
@@ -110,7 +110,7 @@ nav {
 }
 
 
-/* DARK OVERLAY */
+
 .hero-bg::after {
     content: "";
     position: absolute;
@@ -118,7 +118,7 @@ nav {
     background: rgba(5, 10, 20, 0.6);
 }
 
-/* KEEP TEXT ABOVE VIDEO */
+
 .hero-content {
     position: absolute;
     inset: 0;
@@ -212,7 +212,7 @@ nav {
     margin-bottom: 2.5rem;
 }
 
-/* BUTTONS */
+
 .btn {
     padding: 1.2rem 2.5rem;
     text-transform: uppercase;
@@ -254,7 +254,34 @@ nav {
     border-color: white;
 }
 
-/* SECTION */
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+
+    padding: 0.9rem 2.2rem;
+    border: 1px solid var(--accent);
+
+    background: linear-gradient(180deg, #050a14, #02050c);
+    color: var(--accent);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    transition: all 0.4s ease;
+}
+
+
+.contact-btn:hover {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+
+
 section {
     padding: 8rem 10%;
 }
@@ -277,7 +304,7 @@ section {
     margin: 15px auto;
 }
 
-/* PROPERTY GRID */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -295,7 +322,7 @@ section {
 
 @media (max-width: 900px) {
 
-    /* NAVBAR */
+  
     nav {
         padding: 16px 24px;
         flex-direction: column;
@@ -312,7 +339,7 @@ section {
         font-size: 14px;
     }
 
-    /* HERO SECTION */
+
     .hero {
         height: auto;
         padding: 120px 24px 80px;
@@ -335,7 +362,7 @@ section {
         padding: 14px 28px;
     }
 
-    /* SECTION CONTAINER */
+
     .container {
         padding: 60px 24px;
     }
@@ -344,7 +371,7 @@ section {
         font-size: 32px;
     }
 
-    /* PROPERTY GRID */
+
     .grid {
         grid-template-columns: 1fr;
         gap: 32px;
@@ -360,7 +387,7 @@ section {
         padding: 6px 12px;
     }
 
-    /* ELITE DIFFERENCE SECTION */
+
     .elite-difference {
         padding: 60px 24px;
     }
@@ -387,7 +414,7 @@ section {
         display: block;
     }
 
-    /* FOOTER */
+
     footer {
         padding: 60px 24px 20px;
     }
@@ -460,7 +487,7 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* ELITE DIFFERENCE */
+
 .elite-difference {
     background: var(--primary);
     color: #fff;
@@ -507,7 +534,7 @@ section {
     filter: grayscale(0%);
 }
 
-/* FOOTER */
+
 footer {
     background: var(--primary);
     color: #888;
@@ -578,7 +605,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: 3rem;
@@ -595,7 +622,7 @@ footer {
 
 @media (max-width: 900px) {
 
-    /* NAVBAR */
+
     nav {
         padding: 16px 20px;
         flex-direction: column;
@@ -612,7 +639,7 @@ footer {
         font-size: 13px;
     }
 
-    /* HERO SECTION */
+
     .hero {
         height: 100vh;
     }
@@ -659,7 +686,7 @@ footer {
         margin-bottom: 2rem;
     }
 
-    /* HERO BUTTONS */
+
     .Btn {
         flex-direction: column;
         gap: 14px;
@@ -671,7 +698,7 @@ footer {
         margin: 0 auto;
     }
 
-    /* SECTIONS */
+
     section {
         padding: 4rem 24px;
     }
@@ -680,13 +707,13 @@ footer {
         font-size: 2rem;
     }
 
-    /* GRID */
+
     .grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    /* ELITE DIFFERENCE */
+
     .about-section {
         flex-direction: column;
         text-align: center;
@@ -704,12 +731,12 @@ footer {
 
 
 }
-/* HIDE CHECKBOX */
+
 #menu-toggle {
     display: none;
 }
 
-/* HAMBURGER ICON */
+
 .three-line {
     display: none;
     cursor: pointer;
@@ -720,7 +747,7 @@ footer {
     height: 28px;
 }
 
-/* MOBILE MENU */
+
 @media (max-width: 900px) {
 
     nav {
@@ -753,7 +780,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* TOGGLE MENU */
+
     #menu-toggle:checked ~ .nav-links {
         display: flex;
     }
