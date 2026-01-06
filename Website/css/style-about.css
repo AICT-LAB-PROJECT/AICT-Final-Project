@@ -26,30 +26,8 @@ body {
     perspective: 1500px;
 }
 
-/* --- ANIMATIONS --- */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 @keyframes scaleIn {
     from {
@@ -95,7 +73,7 @@ body {
     }
 }
 
-/* --- NAVIGATION --- */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -143,22 +121,13 @@ nav {
     opacity: 1;
 }
 
-/* --- HERO SECTIONS --- */
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(5, 10, 20, 0.6), rgba(5, 10, 20, 0.6)),
-        url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
+
+
 
 .hero-about {
     height: 60vh;
     background: linear-gradient(rgba(5, 10, 20, 0.7), rgba(5, 10, 20, 0.7)),
-        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed;
+        url("../assets/bg-about.avif") center/cover no-repeat fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +167,7 @@ nav {
     margin-bottom: 1rem;
 }
 
-.hero p,
+
 .hero-subtitle {
     font-size: 0.9rem;
     font-weight: 300;
@@ -215,7 +184,7 @@ nav {
     animation: eliteReveal 1.8s var(--elite-bezier) both;
 }
 
-/* --- BUTTONS --- */
+
 .btn {
     padding: 1.2rem 2.5rem;
     text-transform: uppercase;
@@ -239,24 +208,11 @@ nav {
     color: var(--accent);
 }
 
-.btn-secondary {
-    background: transparent;
-    color: white;
-    margin-left: 1rem;
-}
 
-.btn-secondary:hover {
-    background: white;
-    color: var(--primary);
-    border-color: white;
-}
 
-.btn-footer {
-    margin-top: 1.5rem;
-    padding: 0.8rem 1.5rem;
-}
 
-/* --- SECTION GENERAL --- */
+
+
 section {
     padding: 8rem 10%;
 }
@@ -284,7 +240,7 @@ section {
     margin: 15px auto;
 }
 
-/* --- SPLIT SECTION --- */
+
 .split-section {
     display: flex;
     align-items: center;
@@ -342,7 +298,7 @@ section {
     animation: drawLine 2s var(--elite-bezier) forwards;
 }
 
-/* --- RIBBON --- */
+
 .ribbon {
     background: #050a14;
     padding: 4rem 10%;
@@ -368,7 +324,7 @@ section {
     letter-spacing: 1px;
 }
 
-/* General container */
+
 .why-choose {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -393,7 +349,7 @@ section {
     margin-bottom: 40px;
 }
 
-/* Feature cards container */
+
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -401,7 +357,7 @@ section {
     gap: 30px;
 }
 
-/* Individual feature card */
+
 .feature-card {
     background-color:  rgb(213, 203, 203);
     padding: 30px 20px;
@@ -417,13 +373,13 @@ section {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Icon style */
+
 .feature-card .icon {
     font-size: 2.5em;
     margin-bottom: 15px;
 }
 
-/* Card headings and paragraph */
+
 .feature-card h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
@@ -436,7 +392,7 @@ section {
 }
 
 
-/* --- TESTIMONIALS --- */
+
 .testimonial-container {
     background-color: #fdfdfd;
     padding: 100px 0;
@@ -503,7 +459,7 @@ section {
     color: #050a14;
 }
 
-/* --- CTA SECTION --- */
+
 .cta-section {
     background: #050a14;
     color: white;
@@ -525,7 +481,7 @@ section {
     line-height: 2;
 }
 
-/* --- FOOTER --- */
+
 
 footer {
     background: var(--primary);
@@ -597,17 +553,9 @@ footer {
     font-size: 0.8rem;
 }
 
-.copyright {
-    text-align: center;
-    border-top: 1px solid #111;
-    padding-top: 3rem;
-    margin-top: 3rem;
-    color: #888;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-}
 
-/* RESPONSIVE */
+
+
 @media (max-width: 1024px) {
 
     .hero h1,
@@ -633,10 +581,10 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 }
-/* Responsive Styles for Tablets and Mobile (900px and below) */
+
 @media screen and (max-width: 900px) {
     
-    /* Navigation - Stack links or adjust spacing */
+
     nav {
         padding: 15px 5%;
         flex-direction: column;
@@ -649,7 +597,7 @@ footer {
         justify-content: center;
     }
 
-    /* Hero Section - Adjust font sizes for smaller screens */
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -658,9 +606,9 @@ footer {
         font-size: 1.1rem;
     }
 
-    /* Split Section - Stack Image on Top of Text */
+
     .split-section {
-        flex-direction: column; /* Stacks the items vertically */
+        flex-direction: column; 
     }
 
     .split-image, .split-content {
@@ -670,11 +618,11 @@ footer {
     }
 
     .split-image img {
-        height: 350px; /* Control height when stacked */
+        height: 350px; 
         object-fit: cover;
     }
 
-    /* Ribbon - Stack items in 2 columns or 1 */
+
     .ribbon {
         flex-wrap: wrap;
         padding: 30px 5%;
@@ -682,18 +630,18 @@ footer {
     }
 
     .ribbon-item {
-        flex: 1 1 40%; /* Two items per row */
+        flex: 1 1 40%; 
         margin: 10px 0;
     }
 
-    /* Why Choose Us - Adjust the 3-column feature cards */
+
     .features {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         gap: 20px;
         padding: 0 5%;
     }
 
-    /* Leadership/Testimonial Grid - 1 or 2 columns */
+
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 25px;
@@ -704,7 +652,7 @@ footer {
         padding: 20px;
     }
 
-    /* Footer - Stack the links for readability */
+
     .footer-content {
         grid-template-columns: 1fr 1fr; /* Two columns in footer */
         gap: 40px;
@@ -712,7 +660,7 @@ footer {
     }
 
     .footer-links:first-child {
-        grid-column: span 2; /* Logo/Desc takes full width */
+        grid-column: span 2; 
     }
 }
 
@@ -736,7 +684,7 @@ footer {
 }
 @media (max-width: 900px) {
 
-    /* NAVBAR */
+
     nav {
         padding: 16px 20px;
         flex-direction: column;
@@ -753,25 +701,14 @@ footer {
         font-size: 13px;
     }
 
-    /* HERO SECTION */
+
     .hero {
         height: 100vh;
     }
 
-    .hero-bg {
-        width: 100%;
-        height: 100%;
-    }
 
-    .hero-bg video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 
-    .three-line {
-        display: none;
-    }
+
 
     .three-line img {
         height: 30px;
@@ -800,19 +737,15 @@ footer {
         margin-bottom: 2rem;
     }
 
-    /* HERO BUTTONS */
-    .Btn {
-        flex-direction: column;
-        gap: 14px;
-    }
 
+    
     .hero-content .btn {
         width: 100%;
         max-width: 260px;
         margin: 0 auto;
     }
 
-    /* SECTIONS */
+
     section {
         padding: 4rem 24px;
     }
@@ -821,36 +754,23 @@ footer {
         font-size: 2rem;
     }
 
-    /* GRID */
+
     .grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    /* ELITE DIFFERENCE */
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
 
-    .about-text h2 {
-        font-size: 2.2rem;
-    }
 
-    .about-text p {
-        font-size: 0.95rem;
-        line-height: 1.8;
-    }
 
 
 }
-/* HIDE CHECKBOX */
+
 #menu-toggle {
     display: none;
 }
 
-/* HAMBURGER ICON */
+
 .three-line {
     display: none;
     cursor: pointer;
@@ -861,7 +781,7 @@ footer {
     height: 28px;
 }
 
-/* MOBILE MENU */
+
 @media (max-width: 900px) {
 
     nav {
@@ -894,7 +814,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* TOGGLE MENU */
+
     #menu-toggle:checked ~ .nav-links {
         display: flex;
     }
