@@ -1,9 +1,7 @@
-/* --- CORE DESIGN SYSTEM --- */
 :root {
     --gold: #c5a059;
     --black: #050a14;
     --primary: #050a14;
-    --accent: #c5a059;
     --dark-card: #0a111f;
     --transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -21,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -58,7 +56,7 @@ nav {
     color: #c5a059;
 }
 
-/* --- HERO SECTION --- */
+
 .hero {
     height: 55vh;
     display: flex;
@@ -67,7 +65,7 @@ nav {
     align-items: center;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80') center/cover;
+        url("../assets/bg-properties.avif") center/cover;
 }
 
 .hero span {
@@ -85,7 +83,6 @@ nav {
     text-transform: uppercase;
 }
 
-/* --- FILTER SYSTEM --- */
 input[type="radio"] {
     display: none;
 }
@@ -139,7 +136,7 @@ input[type="radio"] {
     display: none;
 }
 
-/* --- PROPERTY GRID --- */
+
 .grid {
     padding: 0 8% 100px;
     display: grid;
@@ -214,7 +211,7 @@ input[type="radio"] {
     font-family: 'Cinzel', serif;
 }
 
-/* --- CONTACT BUTTON --- */
+
 .contact-btn {
     display: block;
     width: 100%;
@@ -235,7 +232,7 @@ input[type="radio"] {
     color: var(--black);
 }
 
-/* --- FOOTER --- */
+
 footer {
     background: var(--primary);
     color: #888;
@@ -284,7 +281,6 @@ footer {
 }
 
 .footer-links a:hover {
-    color: var(--accent);
     color: #c5a059;
     padding-left: 5px;
 }
@@ -316,12 +312,8 @@ footer {
     .footer-content {
         grid-template-columns: 1fr 1fr;
     }
-
-    .about-section {
-        flex-direction: column;
-    }
 }
-/* --- MOBILE NAV --- */
+
 #menu-toggle {
     display: none;
 }
@@ -371,7 +363,6 @@ footer {
     }
 }
 
-/* --- ANIMATION --- */
 @keyframes cardEntrance {
     from {
         opacity: 0;
@@ -399,14 +390,6 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
     }
-
-    .footer-links:nth-child(1),
-    .footer-links:nth-child(2),
-    .footer-links:nth-child(3),
-    .footer-links:nth-child(4) {
-        grid-column: span 1;
-    }
-
     .footer-logo {
         font-size: 1.4rem;
     }
